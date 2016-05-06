@@ -3156,7 +3156,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+Operation2()",
+											"text": "+tion2()",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5
 										},
@@ -4148,7 +4148,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFUhu/NwHdYIfU="
 							},
-							"name": "Operation2",
+							"name": "tion2",
 							"visibility": "public",
 							"isStatic": false,
 							"isLeaf": false,
