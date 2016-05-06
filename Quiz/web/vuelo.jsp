@@ -45,9 +45,14 @@
                                    <form class="register" method="POST" action="ControladorAerolinea">                                                   
                                        <h1 class="register-title">CREAR AEROLINEA</h1>                                       
                                        <input type="text" class="register-input" placeholder="Nombre Aerolinea" id="usuario" name="nombreAerolinea">
-                                       <input type="text" class="register-input" placeholder="Codigo Vuelo" id="usuario" name="codigo">
-                                       
-                                         <input type="submit" name="accion" value="Crear" class="register-button">
+                                       <input type="text" class="register-input" placeholder="Codigo Vuelo" id="codigo" name="codigo">
+                                       <input type="text" class="register-input" placeholder="Fecha de  Vuelo" id="fecha" name="Fecha">
+                                       <input type="text" class="register-input" placeholder="Capacidad" id="capacidad" name="Capacidad">
+                                       <input type="text" class="register-input" placeholder="Disponibilidad Promo" id="promo" name="Promo">
+                                       <input type="text" class="register-input" placeholder="Disponibilidad Econo" id="econo" name="Econo">
+                                       <input type="text" class="register-input" placeholder="Disponibilidad Flexi" id="flexi" name="Flexi">
+                                       <input type="text" class="register-input" placeholder="Codigo Vuelo" id="codigo" name="codigo">
+                                       <input type="submit" name="accion" value="comprar" class="register-button">
                                    </form>
                                </td>
                                
