@@ -5,12 +5,6 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 
-<%@page import="java.util.List"%>
-
-<%@page import="VO.Aerolina"%>
-<%@page import="Dao.DAOAerolinea"%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <html>
     <head>
@@ -24,10 +18,7 @@ and open the template in the editor.
         
         
     </head>
-    <body>  
-        
-        <%DAOAerolinea daoaerolinea = new dao();%>
-        <%List<Aerolina> aerolinea= daoaerolinea.findAll();%>
+   
        
         <div id="todo">
             <div id="titulo">
@@ -52,7 +43,7 @@ and open the template in the editor.
                            <tr >
                                <td>
                                    <form class="register" method="POST" action="ControladorAerolinea">                                                   
-                                       <h1 class="register-title">CREAR RED SOCIAL</h1>                                       
+                                       <h1 class="register-title">CREAR AEROLINEA</h1>                                       
                                        <input type="text" class="register-input" placeholder="Nombre Aerolinea" id="usuario" name="nombreAerolinea">
                                        
                                          <input type="submit" name="accion" value="Crear" class="register-button">
@@ -60,25 +51,25 @@ and open the template in the editor.
                                </td>
                                <td>
                                  <div id="right">                
-                                                                           
-                                              <h1  class="register-title">Listado de Aerolineas</h1> 
+                                     <form class="register" method="POST" action="ControladorAerolinea"> 
+                                     <h1  class="register-title">Listado de Aerolineas</h1> 
                                                     
                                               <table >
                                                   <tr>
                                                         <th ID="colum1" >ID </th>
                                                         <th id="colum2" >Aerolinea</th>                        
-                                                      </tr>
-                                                
-                                                <tr>
-                                                    <td></td>
-                                                    
-                                                </tr>
+                                                      </tr>                                             
                                                 
                                                 <tr>
                                                     <td>no content</td>
                                                     <td>no content</td>
                                                 </tr>
-                                            </table>                                           
+                                            </table>
+                                     
+                                     </form>>                                 
+                                              
+                                               
+
                                        </td>
                                     </table> 
                         </div>   
