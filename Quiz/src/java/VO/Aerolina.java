@@ -5,12 +5,23 @@
  */
 package VO;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Andres Felipe Bernal
  */
 public class Aerolina {
     private String nombreAerolina;
+    private ArrayList<Vuelo> vuelos;
+
+    public ArrayList<Vuelo> getVuelos() {
+        return vuelos;
+    }
+
+    public void setVuelos(ArrayList<Vuelo> vuelos) {
+        this.vuelos = vuelos;
+    }
 
     public String getNombreAerolina() {
         return nombreAerolina;
