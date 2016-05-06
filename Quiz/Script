@@ -1,6 +1,0 @@
-CREATE DATABASE Aerolinea;
-USE Aerolinea;
-
-CREATE TABLE IF NOT EXISTS Aerolinea(
-	Nombre VARCHAR(40) NOT NULL
-);
