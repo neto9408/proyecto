@@ -8,6 +8,9 @@ package DAO;
 import VO.Aerolina;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -31,7 +34,29 @@ public class DAOAerolinea implements IBaseDatos<Aerolina>{
 
     @Override
     public List<Aerolina> findAll() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       List<Aerolina> aerolineas = null;
+        String query = "SELECT * FROM Aerolinea";
+        Connection conexion = Conexion.getConnection();
+        try {
+            Statement st = conexion.createStatement();
+	    ResultSet rs = st.executeQuery(query);
+            String nombre="";
+            
+            while(rs.next()){
+                if(aerolineas==null){
+                    aerolineas = new ArrayList<Aerolina>();
+                }
+                Aerolina registro = new Aerolina();
+                nombre = rs.getString("nombre");
+                registro.setNombreAerolina(nombre);
+                
+                aerolineas.add(registro);
+            }
+            st.close();
+        } catch (Exception e) {
+            System.out.println("Error al listar aerolineas.");
+        }
+        return aerolineas;
     }
 
     @Override
