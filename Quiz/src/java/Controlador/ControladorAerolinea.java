@@ -5,6 +5,8 @@
  */
 package Controlador;
 
+import DAO.DAOAerolinea;
+import VO.Aerolina;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -73,8 +75,10 @@ public class ControladorAerolinea extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
             String nomAerolinea = request.getParameter("nombreAerolinea");
-            int b = 0;
-            
+            Aerolina aero = new Aerolina();
+            aero.setNombreAerolina(nomAerolinea);
+            DAOAerolinea daoAero = new DAOAerolinea();
+            daoAero.insert(aero);
     }
 
     /**
