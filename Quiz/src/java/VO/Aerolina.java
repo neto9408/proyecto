@@ -10,7 +10,7 @@ package VO;
  * @author Andres Felipe Bernal
  */
 public class Aerolina {
-    public String nombreAerolina;
+    private String nombreAerolina;
 
     public String getNombreAerolina() {
         return nombreAerolina;
