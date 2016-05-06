@@ -19,6 +19,16 @@ public class Vuelo {
     private int disponiblesPromo;
     private int disponiblesEcono;
     private int disponiblesFlexi;
+    private Aerolina aerolinea;
+
+    public Aerolina getAerolinea() {
+        return aerolinea;
+    }
+
+    public void setAerolinea(Aerolina aerolinea) {
+        this.aerolinea = aerolinea;
+    }
+    
 
     public String getCodigo() {
         return codigo;

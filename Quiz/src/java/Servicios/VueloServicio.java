@@ -5,17 +5,17 @@
  */
 package Servicios;
 
-import DAO.DAOAerolinea;
-import VO.Aerolina;
+import DAO.DAOVuelo;
+import VO.Vuelo;
 
 /**
  *
  * @author Andres Felipe Bernal
  */
-public class AerolineaServicios {
-   private DAOAerolinea dao = null;
-   
-   public boolean crearAerolinea(Aerolina a){
-   return this.dao.insert(a);
-   } 
+public class VueloServicio {
+    private DAOVuelo dao= null;
+     
+    public boolean crearVuelo(Vuelo t){
+    return this.dao.insert(t);
+    }
 }
