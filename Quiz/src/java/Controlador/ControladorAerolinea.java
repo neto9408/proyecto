@@ -79,6 +79,7 @@ public class ControladorAerolinea extends HttpServlet {
             aero.setNombreAerolina(nomAerolinea);
             DAOAerolinea daoAero = new DAOAerolinea();
             daoAero.insert(aero);
+            response.sendRedirect("index.jsp?mensaje = archivo insertado");
     }
 
     /**
