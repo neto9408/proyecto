@@ -20,7 +20,7 @@ public class DAOAerolinea implements IBaseDatos<Aerolina>{
         boolean resultado=false;
         String nombre = "";
         Connection conexion = Conexion.getConnection();
-        String query ="INSERT INTO Aerolinea (nombre)" + "VALUES(?)";
+        String query ="INSERT INTO aerolinea (nombre)" + "VALUES(?)";
         PreparedStatement ps = null;
         try {
             ps=conexion.prepareStatement(query);
@@ -35,7 +35,7 @@ public class DAOAerolinea implements IBaseDatos<Aerolina>{
     @Override
     public List<Aerolina> findAll() {
        List<Aerolina> aerolineas = null;
-        String query = "SELECT * FROM Aerolinea";
+        String query = "SELECT * FROM aerolinea";
         Connection conexion = Conexion.getConnection();
         try {
             Statement st = conexion.createStatement();
