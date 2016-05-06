@@ -73,6 +73,7 @@ public class ControladorAerolinea extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
             String nomAerolinea = request.getParameter("nombreAerolinea");
+            int b = 0;
             
     }
 
