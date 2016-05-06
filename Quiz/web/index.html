@@ -26,13 +26,12 @@ and open the template in the editor.
     </head>
     <body>  
         
-        <%
-        DAOAerolinea daoaerolinea = new dao();
-        List<Aerolina> aerolinea= daoaerolinea.findAll();
+        <%DAOAerolinea daoaerolinea = new dao();%>
+        <%List<Aerolina> aerolinea= daoaerolinea.findAll();%>
        
         <div id="todo">
             <div id="titulo">
-               <img src="imagenes/red.png"/>
+               
                
             </div>
         <div ID ="tituloprim"  >
@@ -69,16 +68,12 @@ and open the template in the editor.
                                                         <th ID="colum1" >ID </th>
                                                         <th id="colum2" >Aerolinea</th>                        
                                                       </tr>
-                                                <%                                          
-                                                for(int i = 0;i<aerolinea.size();i++){
-                                               %>
+                                                
                                                 <tr>
-                                                    <td><% pageContext.getOut().println(aerolinea.get(i).getNombre()); %></td>
+                                                    <td></td>
                                                     
                                                 </tr>
-                                                <%
-                                                    }
-                                                %>
+                                                
                                                 <tr>
                                                     <td>no content</td>
                                                     <td>no content</td>
